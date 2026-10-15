@@ -2,30 +2,26 @@
 
 Statische Website für Reinigung, Umzüge und Gartenpflege aus Kirchzarten.
 
-**Vorschau:** https://kastriottafolli.github.io/r-tasholli-reinigung-umzuege/
+**Website:** https://kastriottafolli.github.io/r-tasholli-reinigung-umzuege/
 
-## Inhalt
+## Gestaltung
 
-Die veröffentlichte Website liegt in `docs/`. GitHub Pages veröffentlicht den Ordner aus dem Hauptbranch. HTML, CSS, JavaScript, Schriften und Bilder werden ohne Build-Schritt ausgeliefert. `.nojekyll` verhindert eine Verarbeitung durch Jekyll.
+Die Website liegt in `docs/`. GitHub Pages veröffentlicht diesen Ordner aus `codex/website`, ohne Build-Schritt. Die Gestaltung nutzt großflächige Fotos, dunkles Marineblau, kräftiges Blau und die Serifenschrift Bodoni Moda. Startseite und Leistungsseiten wurden neu aufgebaut. Die zuvor eingesetzten 3D- und Vektorszenen sind entfernt.
 
-Die Website enthält drei ausführliche Leistungsseiten, FAQ, ein Mobilmenü, ein animiertes RT-Markenmotiv und einen Anfrage-Assistenten. Der Assistent sendet keine Anfrage an einen Server; er bereitet eine E-Mail zur Prüfung und zum Versand durch den Besucher vor.
+Der Einstieg wechselt langsam zwischen drei Bildmotiven. Die Motive sind auch per Button wählbar. Automatische Wechsel pausieren bei Tastaturfokus, Mauszeiger über dem Einstieg, unsichtbarem Einstieg, verborgenem Tab und reduzierter Bewegung. Die Pause-Taste hält auch die übrigen Effekte an. Ein noch nicht geladenes oder fehlerhaftes Bild ersetzt kein vorhandenes Bild.
 
-## Animierte Szenen
+Auf kleinen Displays werden die Inhalte in einer Spalte angezeigt. Die Bilder wechseln dort ohne Zoom. Es gibt keine festgehaltene Scroll-Geschichte oder 3D-Flächen. Die Navigation wird unterhalb des Kopfbereichs geöffnet; Telefon und Anfrage bleiben am unteren Rand erreichbar. Formulare verwenden auf Mobilgeräten mindestens 16px große Eingabeschriften.
 
-Die Startseite bietet drei direkt wählbare Echtzeit-Illustrationen: Fensterreinigung mit Glanz und Staubsauger, ein Transporter mit bewegten Rädern und verladenen Kartons sowie Gartenpflege mit Mäher und Heckenschere. Beim Scrollen wechseln die Illustrationen passend zur jeweiligen Leistung. Jede Leistungsseite enthält zusätzlich ihre eigene Szene.
+Die Anfrage wird ausschließlich im Browser zusammengestellt und anschließend als E-Mail-Entwurf geöffnet. Besucher prüfen und versenden die Nachricht selbst. Es gibt keinen Versandserver.
 
-Die Szenen werden mit nativem WebGL gezeichnet und benötigen keine externen Bibliotheken oder Mediendownloads. Bei fehlender WebGL-Unterstützung erscheinen animierte Vektorillustrationen. Die Abbildungen sind illustrative Darstellungen der Leistungen und keine Dokumentation eines tatsächlichen Fuhrparks.
+## Prüfung
 
-Die Animationen lassen sich über die Pause-Taste im Kopfbereich anhalten. Reduzierte Bewegung wird beim Start berücksichtigt. Render-Schleifen pausieren außerhalb des sichtbaren Bereichs und bei verborgenem Browser-Tab; die Pixeldichte wird begrenzt. Szenenwahl und Anfrage sind mit der Tastatur bedienbar.
-
-Geometrien, Matrizen, Animationszeitpunkte, Fallback, Szenensteuerung und Anfrage-Logik wurden separat geprüft. Eine echte GPU-/Browserdarstellung konnte in der Arbeitsumgebung wegen einer nicht verfügbaren administrativen Browser-Sicherheitsprüfung nicht geprüft werden.
+Interne Verweise, Bilder, Schriften, Seitenstruktur, Kontaktlogik, Bewegungspräferenzen und die Bildwechselsteuerung werden lokal geprüft. Der tatsächliche Browser- und Handy-Bildeindruck konnte wegen einer nicht verfügbaren administrativen Browserprüfung nicht geprüft werden. Auch die gewünschten Referenzseiten AB Bau und Tafolli Glass waren darüber nicht zugänglich. Die Gestaltung basiert daher auf dem bereitgestellten Markenmaterial und den gezeigten AB-Bau-Beispielen; sie ist keine nachgeprüfte Nachbildung dieser Websites.
 
 ## Entwurfsstand
 
-Diese Seite ist eine Gestaltungs-Vorschau. Die rechtlichen Anbieterangaben und die endgültigen Datenschutzhinweise sind noch zu vervollständigen. Suchmaschinenindexierung ist vorläufig deaktiviert. Preise, Bewertungen und Versicherungsangaben wurden nicht erfunden.
+Rechtliche Anbieterangaben und endgültige Datenschutzhinweise sind vor dem endgültigen Geschäftseinsatz zu vervollständigen. Suchmaschinenindexierung ist vorläufig deaktiviert. Preise, Bewertungen und Versicherungsangaben wurden nicht erfunden.
 
-Die Fotos sind generierte Symbolbilder, keine Referenzaufnahmen. Die RT-Grafik ist eine Vektoradaption des übergebenen Markenmotivs. Manrope wird lokal geladen; die SIL-Open-Font-Lizenz liegt in `docs/assets/Manrope-OFL.txt`.
+Die Fotos sind generierte Symbolbilder, keine Referenzaufnahmen. Die RT-Grafik adaptiert das übergebene Markenmotiv. Manrope und Bodoni Moda werden lokal geladen; die Lizenzen liegen unter `docs/assets/`.
 
-## Änderungen
-
-Änderungen an `docs/` werden nach einem Push von GitHub Pages veröffentlicht. Die relativen Verweise funktionieren auch unter dem Projektpfad der GitHub-Pages-Adresse. `docs/assets/flyer-a5.pdf` enthält den überarbeiteten Flyer.
+Die freigegebenen Flyer bleiben unverändert. `docs/assets/flyer-a5.pdf` enthält weiterhin den bisherigen Flyer.
