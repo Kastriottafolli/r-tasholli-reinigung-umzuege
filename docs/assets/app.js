@@ -19,9 +19,10 @@
   function applyMotion() {
     document.body.classList.toggle('motion-paused', paused);
     motion?.setAttribute('aria-pressed', String(paused));
-    const label = paused ? 'Logo-Animation abspielen' : 'Logo-Animation pausieren';
+    const label = paused ? 'Animationen abspielen' : 'Animationen pausieren';
     motion?.setAttribute('aria-label', label); motion?.setAttribute('title', label);
     if (motion) motion.textContent = paused ? '▷' : 'Ⅱ';
+    document.dispatchEvent(new CustomEvent('rt:motion', {detail: {paused}}));
   }
   applyMotion();
   motion?.addEventListener('click', () => {
